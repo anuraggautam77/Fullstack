@@ -1,0 +1,26 @@
+# Compiled files
+#netbean folders
+ nbproject
+
+# Node stuff
+node_modules
+client/src_old
+.npm
+.node_repl_history
+.lock-wscript
+logs
+*.log
+npm-debug.log*
+
+# OS stuff
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+$RECYCLE.BIN/
+._*
+.DS_Store
+.Spotlight-V100
+.Trashes
+.vscode
+.server/content
+server/content/

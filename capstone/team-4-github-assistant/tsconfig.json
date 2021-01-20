@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /*"sourceMap": true, */
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es6",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+  },
+  "exclude": [
+      "node_modules",
+  ],
+  "include": [
+    "./client/src/**/*"
+],
+  "typeRoots": [
+    "./node_modules/@types/"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "reportFiles": [
+      "./client/src/**/*"
+    ]
+}
+ 
+  }

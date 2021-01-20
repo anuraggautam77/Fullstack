@@ -1,0 +1,22 @@
+image: node:latest
+
+services:
+ - mongo:latest
+ 
+stages: 
+  - build
+  - test
+  - deploy
+
+install-dependencies:
+  stage: build
+  script: 
+    - npm install
+
+heroku-deployment:
+  stage: deploy
+  variables:
+    NODE_ENV: 'production'
+  script:
+    - npm install --production
+    - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/github-assistant.git HEAD:master

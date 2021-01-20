@@ -1,0 +1,116 @@
+.message_container {
+	clear: both;
+	.message-block {
+		padding: 0 0 30px 58px;
+		clear: both;
+	}
+
+	img {
+		float: left;
+		margin-left: -49px;
+		border-radius: 50%;
+		width: 43px;
+		height: 43px;
+		margin-top: 12px;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	}
+
+	.action-container {
+		margin-left: 30px;
+		
+	}
+
+	.bubble {
+		background: rgb(240, 244, 247);
+		font-size: 13px;
+		font-weight: 600;
+		padding: 0px 13px;
+		border-radius: 5px 5px 5px 0px;
+		color: rgb(132, 149, 163);
+		position: relative;
+		margin: 10px;
+		float: left;
+		box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+	}
+
+	.username {
+		p {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.messageDetail {
+		width: 80%;
+		text-align: left;
+		//margin-top: 12px;
+	}
+
+	.m-dropdown__inner {
+		background-color: rgb(255, 255, 255);
+		-webkit-box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2);
+		box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2);
+	}
+
+	.m-dropdown__body {
+		padding: 20px;
+	}
+	.m-nav {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	.m-nav__link {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		position: relative;
+		outline: none !important;
+		vertical-align: middle;
+		padding: 9px 0;
+	}
+
+	.m-nav__link-text {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		vertical-align: middle;
+		font-size: 1rem;
+		color: rgb(111, 114, 125);
+		font-weight: 400;
+	}
+}
+
+.github-message,
+.message_container {
+	.message-block {
+		float: right;
+		width: 100%;
+		display: flex;
+	}
+}
+
+.github-message.row,
+.message_container {
+	justify-content: flex-end;
+	.message-block {
+		justify-content: flex-end;
+	}
+}
+
+.received_msg.row,
+.received_msg {
+	justify-content: flex-start;
+	.message-block {
+		justify-content: flex-start;
+	}
+}
+
+.gitbotContainer {
+	justify-content: flex-end;
+}

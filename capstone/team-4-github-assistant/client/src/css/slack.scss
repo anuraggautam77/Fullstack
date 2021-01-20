@@ -1,0 +1,159 @@
+.application {
+	font-family: sans-serif;
+	header {
+		font-family: sans-serif;
+
+		.top-head {
+			height: 50px;
+			background: #000;
+			color: #fff;
+			border-top: 2px solid red;
+			.nav {
+				margin-top: 10px;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+		}
+		.title {
+			margin-top: 10px;
+			margin-left: 37px;
+			font-size: 23px;
+			position: relative;
+		}
+	}
+
+	.app-layout {
+		li {
+			list-style: none;
+			clear: both;
+		}
+	}
+
+	.box {
+		color: #fff;
+		padding: 1em;
+		text-align: center;
+	}
+
+	input {
+		width: 100%;
+		padding: 1em;
+		outline: none;
+	//	border: 1px solid #f2f2f2;
+	}
+
+	.app-layout {
+		display: grid;
+		height: 100vh;
+		grid-template-columns: 0 250px 1fr;
+		grid-template-rows: auto 1fr auto;
+	}
+
+	.header-bg {
+		background-color: #52364e;
+	}
+	.teams-dark {
+		background-color: #362233;
+	}
+	.channels-dark {
+		background-color: #52364e;
+	}
+	.messages {
+		background-color: #ffffff;
+	}
+	.write {
+		background-color: #f2f2f2;
+	}
+
+	.channels {
+		grid-column: 2;
+		i {
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+
+	.channel-list {
+		height: 200px;
+		overflow-y: scroll;
+	}
+
+	.channel-list::-webkit-scrollbar {
+		display: none;
+	}
+
+	.header {
+		grid-column: 3;
+		grid-row: 1;
+		color: #f2f2f2;
+		border-bottom: 1px solid #f2f2f2;
+	}
+
+	.messages {
+		grid-column: 3;
+		grid-row: 2;
+		padding: 0 1em;
+		overflow-y: scroll;
+	}
+
+	.message-list {
+		margin: 0;
+		padding: 0;
+	}
+
+	.message-list li {
+		padding: .2em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		//	background-color: #52364e;
+		list-style: none;
+	}
+
+	.input {
+		grid-column: 3;
+		grid-row: 3;
+	}
+
+	.left-footer {
+		grid-column: 2;
+		grid-row: 3;
+	}
+
+	.chat-avatar {
+		width: 36px;
+		height: 36px;
+		float: left;
+		margin-right: 10px;
+	}
+	.chat-user-name {
+		padding: 10px;
+		background: rgb(121, 114, 121);
+	}
+	.chat-user,
+	.chat-channel-item {
+		padding: 8px 10px;
+		border-bottom: 1px solid #000;
+		font-size: 15px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.chat-user a {
+		color: inherit;
+	}
+
+	.chat-channel-name {
+		padding: 10px;
+		background-color: #362233;
+		color: #fff !important;
+		min-height: 44px;
+		text-transform: uppercase;
+	}
+
+	.chat-channel,
+	.chat-users {
+		//padding: 8px 10px;
+	}
+	.chat-channel a {
+		color: #fff !important;
+		cursor: pointer;
+	}
+}

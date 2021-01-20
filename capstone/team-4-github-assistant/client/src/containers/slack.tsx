@@ -1,0 +1,108 @@
+import React, { Component, Fragment } from 'react';
+
+import '../css/slack.css';
+import Header from '../components/header';
+import Channel from '../components/slack/ChannelList';
+import DirectList from '../components/slack/DirectList';
+import MessageCenter from '../components/slack/MessageCenter';
+import _ from 'lodash';
+import { connect } from 'react-redux';
+import { getChannelMessgae, addNewChannel, addNewMessage } from '../store/actions/slackAction';
+
+class Slack extends Component<any, any> {
+	constructor(props: any) {
+		super(props);
+		this.state = {
+			currentChannelid: ''
+		};
+	}
+
+	componentWillReceiveProps(newprops: any) {
+		//  console.log(newprops);
+	}
+
+	channelClickHandler(id: any) {
+		this.getMessage('C', id);
+		this.setState({ currentChannelid: id });
+		this.props.getChannelMessgae({ channelid: id });
+	}
+
+	newChannelClickHandler(payload: any) {
+		this.props.addnewChannel(payload);
+	}
+
+	userClickhandler(id: any) {
+		this.getMessage('U', id);
+	}
+
+	getMessage(type: string, id: any) {
+		//  console.log(type);
+		//console.log(id);
+	}
+
+	addNewMessageClickHandler(obj: any) {
+		obj.channelid = this.state.currentChannelid;
+		this.props.addNewMessage(obj);
+	}
+
+	render() {
+		const { slack } = this.props;
+		return (
+			<Fragment>
+				
+			
+				<div className="body">
+					<section className="main-container">
+						<div className="app-layout">
+							<div className="left-panel panel">
+								<Channel
+									list={slack.channels}
+									channelclick={(id: any) => {
+										this.channelClickHandler(id);
+									}}
+									channelAddHandler={(payload: any) => {
+										this.newChannelClickHandler(payload);
+									}}
+								/>
+								<DirectList
+									list={slack.users}
+									userClick={(id: any) => {
+										this.userClickhandler(id);
+									}}
+								/>
+							</div>
+							<div className="right-panel panel">
+								{(() => {
+									if (slack.newMessages) {
+										return (
+											<MessageCenter
+												sendMessage={(obj: any) => {
+													this.addNewMessageClickHandler(obj);
+												}}
+												messages={slack.newMessages}
+											/>
+										);
+									}
+								})()}
+							</div>
+						</div>
+					</section>
+				</div>
+			</Fragment>
+		);
+	}
+}
+
+function mapStateToProps(state: any, props:any) {
+	return { slack: state.slackReducer, routes:props.match };
+}
+
+function mapDispatchToProps(dispatch: any) {
+	return {
+		getChannelMessgae: (payload: any) => dispatch(getChannelMessgae(payload)),
+		addnewChannel: (payload: any) => dispatch(addNewChannel(payload)),
+		addNewMessage: (payload: any) => dispatch(addNewMessage(payload))
+	};
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Slack);

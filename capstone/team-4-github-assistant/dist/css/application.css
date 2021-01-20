@@ -1,0 +1,267 @@
+.gitbotContainer .bd-callout-warning {
+  border-left-color: #f0ad4e !important; }
+
+.gitbotContainer .bd-callout {
+  padding: 0.25rem;
+  border: 1px solid #e0d7d7;
+  border-left-width: .25rem;
+  border-radius: .25rem; }
+
+.gitbotContainer .card {
+  margin-bottom: 1.875rem;
+  margin: 10px;
+  border: none;
+  text-align: left;
+  color: #000;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 10px; }
+
+.gitbotContainer .alert {
+  position: relative;
+  padding: 0.35rem 0.35rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: .25rem;
+  font-size: 13px;
+  color: #d03030;
+  margin-bottom: 0px; }
+.github-message {
+  margin-left: 1px; }
+  .github-message hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .github-message .card {
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    color: black;
+    margin-left: 10px;
+    float: left; }
+  .github-message .message-block {
+    clear: both; }
+  .github-message img {
+    float: left;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    margin-top: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); }
+  .github-message .firstinfo {
+    flex-direction: row;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    align-items: center; }
+    .github-message .firstinfo img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px; }
+    .github-message .firstinfo .profileinfo {
+      width: 100%; }
+      .github-message .firstinfo .profileinfo h1 {
+        font-size: 1.8em; }
+      .github-message .firstinfo .profileinfo h3 {
+        font-size: 1.2em;
+        color: #009688;
+        font-style: italic; }
+  .github-message .bubble {
+    background: #f0f4f7;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 13px;
+    border-radius: 5px 5px 5px 0px;
+    color: #8495a3;
+    position: relative;
+    margin: 10px;
+    float: left;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4); }
+.message_container {
+  clear: both; }
+  .message_container .message-block {
+    padding: 0 0 30px 58px;
+    clear: both; }
+  .message_container img {
+    float: left;
+    margin-left: -49px;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    margin-top: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); }
+  .message_container .action-container {
+    margin-left: 30px; }
+  .message_container .bubble {
+    background: #f0f4f7;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0px 13px;
+    border-radius: 5px 5px 5px 0px;
+    color: #8495a3;
+    position: relative;
+    margin: 10px;
+    float: left;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4); }
+  .message_container .username p {
+    padding: 0;
+    margin: 0; }
+  .message_container .messageDetail {
+    width: 80%;
+    text-align: left; }
+  .message_container .m-dropdown__inner {
+    background-color: white;
+    box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2); }
+  .message_container .m-dropdown__body {
+    padding: 20px; }
+  .message_container .m-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .message_container .m-nav__link {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+    outline: none !important;
+    vertical-align: middle;
+    padding: 9px 0; }
+  .message_container .m-nav__link-text {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 1rem;
+    color: #6f727d;
+    font-weight: 400; }
+
+.github-message .message-block,
+.message_container .message-block {
+  float: right;
+  width: 100%;
+  display: flex; }
+
+.github-message.row,
+.message_container {
+  justify-content: flex-end; }
+  .github-message.row .message-block,
+  .message_container .message-block {
+    justify-content: flex-end; }
+
+.received_msg.row,
+.received_msg {
+  justify-content: flex-start; }
+  .received_msg.row .message-block,
+  .received_msg .message-block {
+    justify-content: flex-start; }
+
+.gitbotContainer {
+  justify-content: flex-end; }
+.application {
+  font-family: sans-serif; }
+  .application header {
+    font-family: sans-serif; }
+    .application header .top-head {
+      height: 50px;
+      background: #000;
+      color: #fff;
+      border-top: 2px solid red; }
+      .application header .top-head .nav {
+        margin-top: 10px;
+        margin-right: 20px;
+        cursor: pointer; }
+    .application header .title {
+      margin-top: 10px;
+      margin-left: 37px;
+      font-size: 23px;
+      position: relative; }
+  .application .app-layout li {
+    list-style: none;
+    clear: both; }
+  .application .box {
+    color: #fff;
+    padding: 1em;
+    text-align: center; }
+  .application input {
+    width: 100%;
+    padding: 1em;
+    outline: none; }
+  .application .app-layout {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0 250px 1fr;
+    grid-template-rows: auto 1fr auto; }
+  .application .header-bg {
+    background-color: #52364e; }
+  .application .teams-dark {
+    background-color: #362233; }
+  .application .channels-dark {
+    background-color: #52364e; }
+  .application .messages {
+    background-color: #ffffff; }
+  .application .write {
+    background-color: #f2f2f2; }
+  .application .channels {
+    grid-column: 2; }
+    .application .channels i {
+      color: #fff;
+      cursor: pointer; }
+  .application .channel-list {
+    height: 200px;
+    overflow-y: scroll; }
+  .application .channel-list::-webkit-scrollbar {
+    display: none; }
+  .application .header {
+    grid-column: 3;
+    grid-row: 1;
+    color: #f2f2f2;
+    border-bottom: 1px solid #f2f2f2; }
+  .application .messages {
+    grid-column: 3;
+    grid-row: 2;
+    padding: 0 1em;
+    overflow-y: scroll; }
+  .application .message-list {
+    margin: 0;
+    padding: 0; }
+  .application .message-list li {
+    padding: .2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style: none; }
+  .application .input {
+    grid-column: 3;
+    grid-row: 3; }
+  .application .left-footer {
+    grid-column: 2;
+    grid-row: 3; }
+  .application .chat-avatar {
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin-right: 10px; }
+  .application .chat-user-name {
+    padding: 10px;
+    background: #797279; }
+  .application .chat-user,
+  .application .chat-channel-item {
+    padding: 8px 10px;
+    border-bottom: 1px solid #000;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .application .chat-user a {
+    color: inherit; }
+  .application .chat-channel-name {
+    padding: 10px;
+    background-color: #362233;
+    color: #fff !important;
+    min-height: 44px;
+    text-transform: uppercase; }
+  .application .chat-channel a {
+    color: #fff !important;
+    cursor: pointer; }
