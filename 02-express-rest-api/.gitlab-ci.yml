@@ -1,0 +1,34 @@
+image: node:latest
+
+stages:
+  - build
+  - test
+  - production
+  
+cache:
+  paths:
+    - node_modules/
+
+install-dependencies:
+  stage: build
+  script: 
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+ 
+lint-checks:
+  stage: test
+  script: 
+    - npm run lint
+    
+production:
+  type: deploy
+  stage: production
+  script:
+    - npm install --production
+    - (echo "machine git.heroku.com"; echo " login anuraggautam77@gmail.com"; echo " password $HEROKU_API_KEY") > ~/.netrc
+    - git push  https://git.heroku.com/api-rest-demo77.git HEAD:master
+  only:
+    - master
+    

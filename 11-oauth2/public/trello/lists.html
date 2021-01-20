@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../stylesheets/list.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+        <title>Notes Application</title>
+    </head>
+
+    <body>
+
+        <section class="main-container">
+            <div class="list-board">
+                <div class="list-board-header">
+                    <h3 id="boardname"> </h3>
+                </div>
+
+                <div class="main-body">
+
+                    <div class="right-pannel" id="boardList"> </div>
+                    <div class="left-pannel">
+                        <div class="list-add-container">
+                            <h4> Add List </h4>
+                            <input type="text" id="listTitle" placeholder="Add List in board" name="listTitle" value="">
+                            <br /><input type="text" class="dn" id="boardid" value="">
+                            <a class="link-style  secondary" href="javascript:void(0)" id="createlist">Add List</a>
+                        </div>
+
+                        <div class="list-add-container">
+                            <h4> Add Users </h4>
+                            <div class="userdropdwonhere"></div>
+                            <a class="link-style secondary" href="javascript:void(0)" id="adduser">Add user</a>
+                            <div class="user-tags"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="services.js"></script>
+        <script src="lists.js"></script>
+        <script src="adduser.js"></script>
+
+    </body>
+
+</html>

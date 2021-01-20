@@ -1,0 +1,166 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+.registerpage .login-block {
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.registerpage .auth-logo-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.registerpage .auth-logo-wrapper .auth-logo {
+	width: 60%;
+}
+.registerpage .banner-sec {
+	min-height: 500px;
+	border-radius: 0 10px 10px 0;
+	padding: 0;
+}
+.registerpage a {
+	text-decoration: none;
+	color: #db1919;
+}
+.registerpage a:hover {
+	color: #363b6e;
+}
+.registerpage .form {
+	background-color: #f4f4f4;
+	padding: 40px;
+	max-width: 600px;
+	margin: 40px auto;
+	border-radius: 4px;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+.registerpage .tab-group {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 25px 0;
+}
+.registerpage .tab-group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.registerpage .tab-group li a {
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	background: #d3d1d1;
+	color: #455956;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+	 
+}
+.registerpage .tab-group li a:hover {
+	background: #01334b;
+	color: #ffffff;
+}
+.registerpage .tab-group .active a {
+	background: #2e6d8a;
+	color: #ffffff;
+}
+.registerpage h1 {
+	text-align: center;
+	font-weight: 300;
+	margin: 0 0 25px;
+}
+.registerpage label {
+	position: absolute;
+	-webkit-transform: translateY(6px);
+	transform: translateY(6px);
+	left: 13px;
+	color: rgba(255, 255, 255, 0.5);
+	pointer-events: none;
+	font-size: 22px;
+}
+.registerpage label .req {
+	margin: 2px;
+	color: #1ab188;
+}
+.registerpage label.active {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+	left: 2px;
+	font-size: 14px;
+}
+.registerpage label.active .req {
+	opacity: 0;
+}
+.registerpage label.highlight {
+	color: #ffffff;
+}
+.registerpage input,
+.registerpage textarea {
+	font-size: 22px;
+	display: block;
+	width: 100%;
+	padding: 5px 10px;
+	background: none;
+	background-image: none;
+	border: 1px solid #a0b3b0;
+	border-radius: 0;
+}
+.registerpage input:focus,
+.registerpage textarea:focus {
+	outline: 0;
+	border-color: #1ab188;
+}
+.registerpage textarea {
+	border: 2px solid #a0b3b0;
+	resize: vertical;
+}
+.registerpage .field-wrap {
+	position: relative;
+	margin-bottom: 40px;
+}
+.registerpage .top-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.registerpage .top-row > div {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+.registerpage .top-row > div:last-child {
+	margin: 0;
+}
+.registerpage .button {
+	border: 0;
+	outline: none;
+	border-radius: 0;
+	padding: 15px 0;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	background: #086c51;
+	color: #ffffff;
+	-webkit-appearance: none;
+}
+.registerpage .button:hover,
+.registerpage .button:focus {
+	background: 1ab188;
+}
+.registerpage .button-block {
+	display: block;
+	width: 100%;
+}
+.registerpage .forgot {
+	margin-top: -20px;
+	text-align: right;
+}
+.registerpage button:disabled {
+	opacity: .6;
+	pointer-events: none;
+}

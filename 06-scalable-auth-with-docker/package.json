@@ -1,0 +1,45 @@
+{
+  "name": "02-express-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha || true",
+    "lint": "./node_modules/.bin/eslint *.js  --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab-sapient.stackroute.in/assignments/02-express-rest-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai-http": "^4.2.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "http-errors": "^1.7.1",
+    "joi": "^14.0.6",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.8",
+    "morgan": "^1.9.0",
+    "node-gyp": "^3.8.0",
+    "nodemon": "^1.18.7",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "sino": "0.0.3",
+    "socket.io": "^2.1.1",
+    "superset": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}

@@ -1,0 +1,261 @@
+swagger: '2.0'
+info:
+  description: >-
+    This is a sample server Api doc for notes, boards and collaborate apps.
+  version: 1.0.0
+  title: swagger api doc
+  contact:
+    email: agautam17@sapient.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: 'localhost:3000'
+basePath: /
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+tags:
+  - name: authentication
+    description: auth services 
+  - name: boards
+    description: Access to Boards
+  - name: card
+    description: Access to Cards
+paths:
+  /user/login:
+    post:
+      tags:
+      - "authentication"
+      summary: "Logs user into the system"
+      description: ""
+      operationId: "loginUser"
+      produces:
+      - "application/json"
+      consumes:
+      - "application/json"
+      parameters:
+      - name: "body"
+        in: "body"
+        description: User info sign up
+        required: true
+        schema:
+          $ref: "#/definitions/UserLoginDetails"
+      responses:
+        200:
+          description: "Success !" 
+        400:
+          description: "Invalid username/password supplied"
+          schema:
+            $ref: "#/definitions/UserLoginResponse"
+  /user/register:
+    post:
+      tags:
+      - "authentication"
+      summary: "Register user into the system"
+      description: ""
+      operationId: "registerUser"
+      produces:
+      - "application/json"
+      consumes:
+      - "application/json"
+      parameters:
+      - name: "body"
+        in: "body"
+        description: User info Register
+        required: true
+        schema:
+          $ref: "#/definitions/UserRegsiterDetails"
+      responses:
+        200:
+          description: "success" 
+        400:
+          description: "Invalid username/password supplied"
+  /api/board:
+    get:
+      tags:
+      - "boards"
+      summary: "Returns all boards"
+      description: "Returns all boards"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+  /api/board/{boardId}:
+    put:
+      tags:
+      - "boards"
+      summary: "Update an existing board"
+      description: ""
+      operationId: "updateBoard"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "boardId"
+        in: "path"
+        description: "ID of board to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        202:
+          description: "success"
+        404:
+          description: "Note not found"
+    get:
+      tags:
+      - "boards"
+      summary: "Find Board by ID"
+      description: "Returns a single board"
+      operationId: "getboardById"
+      parameters:
+      - name: "boardId"
+        in: "path"
+        description: "ID of board to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Boards"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Note not found"
+    delete:
+      tags:
+      - "boards"
+      summary: "Deletes a note"
+      description: ""
+      operationId: "deleteBoard"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "boardId"
+        in: "path"
+        description: "board id to delete"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Invalid ID supplied"
+        404:
+          description: "board not found"
+  /api/boardlist/{boardId}:
+    get:
+      tags:
+      - "card"
+      summary: "get all details from board"
+      description: ""
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "boardId"
+        in: "path"
+        description: "ID of board to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        202:
+          description: "success"
+        404:
+          description: "Note not found"
+  /api/boardlist/newcard:
+    post:
+      tags:
+      - "card"
+      summary: "Add New card in board"
+      description: ""
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "boardId"
+        in: "path"
+        description: "ID of board to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        202:
+          description: "success"
+        404:
+          description: "Note not found"
+  /api/boardlist/{cardId}/:
+    delete:
+      tags:
+      - "card"
+      summary: "Delete the card from Board"
+      description: ""
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "cardId"
+        in: "path"
+        description: "ID of board to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        202:
+          description: "success"
+        404:
+          description: "Note not found"
+definitions:
+ UserRegsiterDetails:
+  properties:
+   username:
+    type: string
+   password:
+    type: string
+   name:
+    type: string
+ UserLoginDetails:
+  properties:
+   username:
+    type: string
+   password:
+    type: string
+ UserLoginResponse:
+  properties:
+   message:
+    type: string
+   token:
+    type: string
+ Boards:
+  properties:
+    boardId:
+     type: integer
+    boardTitle:
+     type: string
+    description:
+     type: string

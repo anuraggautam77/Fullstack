@@ -1,0 +1,14 @@
+image: node:latest
+
+stages:
+  - production
+  
+production:
+  type: deploy
+  stage: production
+  script:
+    - npm install --production
+    - (echo "machine git.heroku.com"; echo " login anuraggautam77@gmail.com"; echo " password $HEROKU_API_KEY") > ~/.netrc
+    - git push  https://git.heroku.com/anuragexpress.git HEAD:master
+  only:
+    - master

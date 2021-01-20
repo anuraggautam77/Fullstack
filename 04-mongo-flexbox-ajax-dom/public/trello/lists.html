@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../stylesheets/list.css" type="text/css" />
+
+    <title>Notes Application</title>
+</head>
+
+<body>
+
+    <section class="main-container">
+        <div class="list-board">
+            <div class="list-board-header">
+                <h3 id="boardname"> </h3>
+            </div>
+
+            <div class="main-body">
+                <div class="left-pannel pannel">
+                    <div class="heading">
+                        <h4> Add task to this board </h4>
+                    </div>
+                    <div class="add-container">
+                        <div>
+                            <input type="text" id="cardTitle" placeholder="Title" name="cardTitle" value="">
+                        </div>
+                        <div>
+                            <input type="text" id="cardDesc" placeholder="Description" name="cardDesc" value="">
+                        </div>
+                        <input type="text" class="dn" id="boardid" value="">
+                        <a class="link-style  secondary" href="javascript:void(0)" id="addCard">Add Card</a>
+
+                    </div>
+                </div>
+                <div class="right-pannel pannel">
+                    <div class="todo-pannel">
+                            <div class="inner-panel">
+                                <h2>To Do</h2>
+                                <div class="list-container" id="todo-container"> </div>
+                            </div>
+                   
+                    </div>
+                    <div class="wip-pannel">
+                        <div class="inner-panel">
+                            <h2>WIP</h2>
+                        <div id="wip-container"> </div>
+                        </div>
+                      
+                    </div>
+                    <div class="done-pannel">
+                        <div class="inner-panel">
+                            <h2>Done</h2>
+                            <div id="done-container"> </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+     
+
+    <script src="services.js"></script>
+    <script src="lists.js"></script>
+
+</body>
+
+</html>

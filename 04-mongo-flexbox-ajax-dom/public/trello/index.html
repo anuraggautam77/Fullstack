@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../stylesheets/board.css" type="text/css" />
+
+    <title>Notes Application</title>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <section>
+            <div class="list-board-header">
+                <h3> Board List </h3>
+
+                <input type="text" id="boardtitle" placeholder="Title" name="boardtitle" value="">
+                <input type="text" id="boarddescription" placeholder="Description" name="boarddescription" value="">
+                <a class="link-style  secondary" href="javascript:void(0)" id="addBoard">Add Board</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="list-container"> 
+                <h3 id="counter"> </h3>
+                <div id="allBoards" class="notes"></div>
+            </div>
+        </section>
+    </div>
+    <script src="services.js"></script>
+    <script src="board.js"></script>
+</body>
+
+</html>

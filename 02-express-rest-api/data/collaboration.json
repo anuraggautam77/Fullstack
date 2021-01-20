@@ -1,0 +1,31 @@
+{
+    "workspaces": [
+        {
+            "id": 1,
+            "name": "workspace one",
+            "users":[1,2,3],
+            "channels":[
+                {"id":1,"name":"channelName","users":[1,3]},
+                {"id":2,"name":"channelTwo","users":[]}         
+            ]
+        },
+        {
+            "id": 2,
+            "name": "workspace Two",
+            "users":[1,2,3],
+            "channels":[
+                {"id":3,"name":"channelName","users":[4,2,3]},
+                {"id":4,"name":"channelTwo","users":[1,2,3]}         
+            ]
+        }
+    ],
+
+    "users":[
+        {"id":1,"name":"anurag"},
+        {"id":2,"name":"Gautam"},
+        {"id":3,"name":"Gaurav"},
+        {"id":4,"name":"Abhijeet"}
+
+    ]
+  
+}

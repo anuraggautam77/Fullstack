@@ -1,0 +1,91 @@
+.home {
+    display: inline-flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgb(238, 238, 238);
+    overflow: auto;
+}
+
+.main-content {
+    display: inline-flex;
+    flex-direction: column;
+    width: 1080px;
+    margin: 40px;
+}
+
+.main-content h1 {
+    margin: 20px 5px;
+    font-size: 22px;
+}
+
+.boards {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.mini-board {
+    display: flex;
+    height: 100%;
+}
+
+.board-link-title {
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.mini-list {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24px;
+    height: 100%;
+    margin-right: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.board-link {
+    box-sizing: border-box;
+    width: 260px;
+    height: 140px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background .1s;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    overflow-wrap: break-word;
+    text-decoration: none;
+    background: rgb(0, 102, 170);
+}
+
+.add-board-button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    background: rgb(20, 136, 29);
+    color: rgb(234, 219, 219);
+}
+
+.add-board-container {
+    box-sizing: border-box;
+    width: 260px;
+    height: 140px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border: 0;
+    background: rgb(221, 221, 221);
+    color: rgb(68, 68, 68);
+}

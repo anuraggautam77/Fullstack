@@ -1,0 +1,188 @@
+html,
+body,
+div,
+span,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+u,
+i,
+ section,
+  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+body {
+    margin: 0 auto;
+    background: linear-gradient(rgba(99, 74, 96, 0.9), rgba(84, 63, 82, 0.9));
+}
+
+.bg1{
+    background: linear-gradient(to right, rgb(100, 145, 115), rgb(219, 213, 164))
+}
+.bg2{
+    background: linear-gradient(to right, rgb(239, 239, 187), rgb(212, 211, 221));
+}
+
+/* Typography */
+
+h1 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+h5 {
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+h6 {
+    color: #666;
+    font-size: 14px;
+}
+
+
+p {
+    margin: 16px 0;
+    padding: 0;
+}
+
+
+/* notes Layout */
+
+
+
+.app-layout{
+    display: flex;
+    margin: 10px;
+}
+
+.main-container{
+    margin: 20px 18px;
+}
+ 
+
+
+.left-panel{
+    flex: 20%;
+    background:rgb(77, 57, 75)
+}
+.right-panel{
+    flex: 80%;
+    display: flex;
+    padding: 10px 0 0 !important;
+}
+
+.panel{
+    padding: 10px 0;
+    border: 1px solid rgb(221, 221, 221);
+    margin: 0 4px;
+}
+.panel h2{
+    font-size: 18px;
+    margin-left: 10px;
+   
+}
+
+.panel .heading{
+    padding-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.All-Threads{
+    padding: 4px 21px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+}
+.All-Threads a{
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+ }
+ .channel-heading{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    background: rgb(100, 136, 100);
+    padding: 5px;
+
+}
+li{
+    padding: 5px;
+    color: rgb(242, 242, 242);
+    font-size: 18px;
+    border-bottom: rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.send-input {
+    width: 92%;
+    padding: 1em;
+    outline: none;
+}
+
+
+.channel-add-container{
+ text-align: center;
+}
+
+.channel-input{
+    width: 80%;
+    padding: 5px;
+}
+
+.add-channelbtn{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 11px;
+    display: grid;
+}
+
+
+.box {
+    color: rgb(255, 255, 255);
+    padding: 0;
+}
+
+.message-container{
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.messages{
+    flex: 1;
+}
+
+
+.link-style{
+    background: rgb(100, 136, 100);
+    text-transform: uppercase;
+    padding: 13px 18px;
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    float: right;
+}

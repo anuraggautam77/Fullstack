@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../stylesheets/notes.css" type="text/css" />
+
+    <title>Notes Application</title>
+</head>
+
+<body>
+    <nav class="app-container">
+        <h1>Notes</h1>
+       
+    </nav>
+    <section>
+
+      <div class="add-container">
+		<input type="text" id="notetitle" placeholder="Title" name="notetitle" value=""> 
+        <input type="text" id="notedescription" placeholder="Description" name="notedescription" value=""> 
+		 <a class="link-style  secondary" href="javascript:void(0)" id="addnote">Add Note</a>
+	 </div>  
+
+    </section>
+	
+	<hr/>
+   
+    <section >
+	
+		<div>
+			 <p id="counter"> </p>
+			<div id="allnotes" class="notes"></div>
+		</div>
+	</section>
+    
+    
+    
+    <script src="services.js"></script>
+    <script src="notes.js"></script>
+</body>
+
+</html>

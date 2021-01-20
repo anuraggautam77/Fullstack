@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../stylesheets/slack.css" type="text/css" />
+  <title>Notes Application</title>
+</head>
+<style>
+
+
+</style>
+<body>
+  <section class="main-container">
+    <div class='app-layout'>
+      <div class='left-panel panel'>
+        <div class="heading"> Threads</div>
+        <hr>
+        <div class="All-Threads">
+          <span><a href="javascript:void(0)" id="public" >Public</a></span>
+        </div>
+        <div class="channels" id="channels">
+          <h4 class="channel-heading">Channels</h4>
+          <ul id="channellist">
+            <li id="channel1"> Channel One</li>
+            <li id="channel2"> Channel Two</li>
+          </ul>
+          <div class="channel-add-container">
+              <input type="text" class="channel-input" placeholder="Channel Name"><br/>
+              <a href="" class="add-channelbtn">Add Channel</a>
+          </div>
+         
+        </div>
+      </div>
+      <div class='right-panel panel'>
+        <div class="message-container">
+          <div class="heading"> Message Pannel</div>
+          <hr>
+          <div class="messages">
+
+          </div>
+
+          <div class="send-message-container">
+            <div class="input box">
+              <input  class="send-input" type="text" placeholder="send your message">
+              <a href="" class="link-style">Send</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script src="services.js"></script>
+  <script src="slack.js"></script>
+
+</body>
+
+</html>

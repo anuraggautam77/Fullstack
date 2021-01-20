@@ -1,0 +1,31 @@
+.gitbotContainer {
+	.bd-callout-warning {
+		border-left-color: rgb(240, 173, 78) !important;
+	}
+
+	.bd-callout {
+		padding: 0.25rem;
+		border: 1px solid rgb(224, 215, 215);
+		border-left-width: .25rem;
+		border-radius: .25rem;
+	}
+
+	.card {
+		margin-bottom: 1.875rem;
+		margin: 10px;
+		border: none;
+		text-align: left;
+		color: #000;
+		box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+		border-radius: 10px;
+	}
+	.alert {
+		position: relative;
+		padding: 0.35rem 0.35rem;
+		border: 1px solid rgba(0, 0, 0, 0);
+		border-radius: .25rem;
+		font-size: 13px;
+		color: rgb(208, 48, 48);
+		margin-bottom: 0px;
+	}
+}

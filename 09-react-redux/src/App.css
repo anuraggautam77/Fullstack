@@ -1,0 +1,19 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: Helvetica Neue, Segoe UI, Trebuchet MS, Geneva, Tahoma,
+    sans-serif;
+  line-height: 1;
+}
+
+.dn {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.fa-close {
+  color: red;
+}

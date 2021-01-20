@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "NetBeans Light Theme",
+    "editor.fontWeight": "bold",
+    "editor.fontSize": 13,
+    "eslint.autoFixOnSave": true,
+    "html.format.endWithNewline": true,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "emmet.includeLanguages": {}
+}

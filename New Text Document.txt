@@ -1,0 +1,8 @@
+Performance :
+Profiling , production build :
+
+Purecomponent
+Presentational component and containers
+
+
+
